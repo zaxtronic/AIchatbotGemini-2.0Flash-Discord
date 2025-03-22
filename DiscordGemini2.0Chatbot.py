@@ -15,7 +15,7 @@ intents.message_content = True  # Permitir leer contenido del mensaje
 bot = commands.Bot(command_prefix="/", intents=intents)
 
 # Configurar Gemini
-genai.configure(api_key="AIzaSyAuxhsSwWw2xu9SI1Q0yNkk6ub_fggQas0")  # Reemplaza con tu API key
+genai.configure(api_key="")  # Reemplaza con tu API key
 modelo = genai.GenerativeModel("gemini-2.0-flash")  # O el modelo que uses
 
 # Historial de mensajes para mantener contexto
@@ -80,4 +80,4 @@ async def on_message(message):
     await bot.process_commands(message)
 
 # Ejecutar el bot
-bot.run("MTM1Mjk3MTc3ODI4MDAwMTU5OA.GIlDW5.F-zirkOeziGm27y41XWlUZBkcJ1BadWXmAF0ps")  # Reemplaza con tu token de Discord
+bot.run("")  # Reemplaza con tu token de Discord
